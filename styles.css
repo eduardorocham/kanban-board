@@ -1,0 +1,92 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 2rem;
+}
+
+.statusArea {
+    display: grid;
+    grid-template-columns: repeat(5, 25rem);
+    gap: 1.5rem;
+}
+
+h1 {
+    margin: 2rem;
+}
+
+.statusBoard-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.statusBoard-head button {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.statusBoard-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.statusBoard-leads {
+    background-color: #E2E4E6;
+    min-height: 20rem;
+    padding: 1.5rem;
+}
+
+.statusBoard-lead {
+    background-color: #FFF;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.statusBoard-lead--info {
+    margin-bottom: 1.2rem;
+}
+
+.statusBoard-lead--info span {
+    font-weight: 700;
+}
+
+.statusBoard-lead button {
+    border: 0;
+    font-size: 1.2rem;
+    background-color: #2A92BF;
+    color: #FFF;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.statusBoard-lead button:hover {
+    background-color: #4fc0f1;
+}
+
+.highlight {
+    background-color: #d6d6d6;
+}
+
+.statusBoard-lead, .statusBoard-leads {
+    transition: 0.4s;
+}
+
+.is-dragging {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+pre {
+    display: none;
+}
